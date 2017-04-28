@@ -1,9 +1,33 @@
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
 .newspaper-body__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px black solid;
   padding-bottom: 5px;
+
+  border-bottom: 1px black solid;
+}
+
+.navigation {
+  padding: 30px;
+
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navigation__link {
+  padding: 10px;
+
+  color: black;
 }
 
 .header-main {
@@ -12,22 +36,8 @@
 }
 
 .header-main__title {
-padding: 0 0 0 10px;
-}
+  padding: 0 0 0 10px;
 
-.navigation {
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 30px;
-}
-
-.navigation__link {
-  padding: 10px;
-  color: black;
-}
-
-.header-main__title {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -36,56 +46,167 @@ padding: 0 0 0 10px;
 
 .main-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-
-  border: 1px solid black;
 }
 
-.main-news-block__title {
+.left-news-container {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  margin-top: 25px;
+}
+
+.first-news-box__image {
   background-image: url('../images/img-story-main.png');
 
+  height: 300px;
+}
+
+.first-news-box__article {
+  margin-top: 16px;
+}
+
+.first-news-box__title {
   font-family: Georgia;
   font-weight: bold;
   font-size: 40px;
   color: white;
-  padding: 40px;
 }
 
-.main-news-block {
-  width: 630px;
-  border: 1px solid black;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
 }
 
-.main-news-block__title {
-  border: 1px solid black;
-}
-
-.main-news-block__small {
-  border: 1px solid black;
-}
-
-.news-block-small__author {
-  border: 1px solid black;
-}
-
-.central-news-block {
+.second-news-box {
   width: 300px;
-  border: 1px solid black;
 }
 
-.central-news-block__subtitle {
-  border: 1px solid black;
+.second-news-box__article {
+  margin-top: 16px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
-.left-news-block {
-  width: 240px;
-  border: 1px solid black;
+.second-news-box__image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url('../images/img-story-2.png');
+
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
-.left-news-block-info {
-  border: 1px solid black;
+.second-news-box__title {
+    display: block;
+
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
 }
 
-.central-news-block__header {
-  border: 1px solid black;
+.third-news-box {
+  width: 300px;
+}
+
+.third-news-box__title {
+    display: block;
+
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.third-news-box__article {
+  margin-top: 16px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.third-news-box__image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url('../images/img-story-3.png');
+
+    height: 300px;
+    margin-top: 15px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.central-block__title {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.central-block__body {
+    display: block;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.central-block-small__image-container {
+    background-image: url('../images/img-story-1.png');
+
+    height: 300px;
+    margin-top: 15px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.central-block-small__body {
+    display: block;
+
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.right-news-block__title {
+    display: block;
+
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+
 }
